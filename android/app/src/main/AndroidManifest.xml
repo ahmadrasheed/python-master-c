@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.python">
+    package="com.ahmad.quiz_app">
    <application
         android:label="python"
         android:icon="@mipmap/ic_launcher">
