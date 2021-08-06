@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
+import 'package:python/db/dbhelper.dart';
 import 'package:python/screens/score/score_screen.dart';
 
 import 'package:sqflite/sqflite.dart';
@@ -13,6 +14,11 @@ import '../models/Questions.dart';
 
 class QuestionController extends GetxController
     with SingleGetTickerProviderMixin {
+  DatabaseHelper  _dbhelper;
+
+  // Future< List<Question>> _questions;
+  // Future<List<Question>> get questions2 => this._questions;
+
 
 
   // Lets animated our progress bar
@@ -57,17 +63,17 @@ class QuestionController extends GetxController
   int _numOfCorrectAns = 0;
   int get numOfCorrectAns => this._numOfCorrectAns;
 
-  // DatabaseHelper  _dbhelper;
-  // Future< List<Question>> _questions;
-  // Future<List<Question>> get questions2 => this._questions;
+
 
   // called immediately after the widget is allocated memory
   @override
   void onInit() {
 
+    // _dbhelper= DatabaseHelper.instance;
+    // List<Question> _questions= _dbhelper.fetchContacts() as List<Question>;
+    // print("666666666666666666666666"+_questions.toString());
 
-
-print('from _question  55555555555555555555555555555555555  ');
+// print('from _question  55555555555555555555555555555555555  ');
     // Our animation duration is 60 s
     // so our plan is to fill the progress bar within 60s
     _animationController =

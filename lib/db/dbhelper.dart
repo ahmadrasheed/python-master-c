@@ -6,9 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../models/Questions.dart';
-import '../models/Questions.dart';
-import '../models/Questions.dart';
-import '../models/Questions.dart';
+
 import 'Contact.dart';
 
 class DatabaseHelper {
@@ -20,11 +18,12 @@ class DatabaseHelper {
 
   static Database _database;
   Future<Database> get database async {
-
+    print ("-1-100000000000000000000000000000000000000");
     if (_database != null) {
       print ("00000000000000000000000000000000000000");
       return _database;
     }
+    print ("-2-2-2-200000000000000000000000000000000000000");
     _database = await _initDatabase(); // only initialize if not created already
     return _database;
   }

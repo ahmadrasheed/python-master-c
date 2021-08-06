@@ -153,36 +153,8 @@ final int lessonIndex;
                                   builder: (context) => QuizScreen()));
 
 
-
-
-                    // SchedulerBinding.instance.addPostFrameCallback((_) {
-                    //
-                    //   // add your code here.
-                    //
-                    //   Navigator.push(
-                    //       context,
-                    //       new MaterialPageRoute(
-                    //           builder: (context) => QuizScreen()));
-                    // });
-
-
-                    // WidgetsBinding.instance.addPostFrameCallback((_){
-                    //
-                    //      Navigator.push(
-                    //             context,
-                    //             new MaterialPageRoute(
-                    //                 builder: (context) => WelcomeScreen()));
-                    //
-                    // });
-
-
-
-
                   }
                   break;
-
-
-
 
                 default:
                   {
